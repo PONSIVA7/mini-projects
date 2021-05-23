@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+}
+#topbar{
+    width: 100%;
+    height: 10px;
+    background-color: black;
+
+}
+
+#header{
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(56, 51, 51);
+    background-color: rgb(244, 244, 245);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    width: 100%;
+    height: 40px;
+    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(rgb(48, 33, 121), rgb(106, 47, 218), rgb(90, 90, 221), alpha);
+    margin: 0 auto;
+}
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 230px;
+    height: 100%;
+    background-color: #083950;
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    font-size: 27px;
+    text-transform: uppercase;
+    color: rgb(190, 169, 128);
+    text-align: center;
+    line-height: 60px;
+    background: #01111a;
+    user-select: none;
+}
+.sidebar ul{
+    list-style-type: none;  
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 57px;
+    font-size: 30px;
+    color: wheat;
+    text-decoration: none;
+    padding-left: 30px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    border-top: 1px solid black rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a{
+    padding-left: 50px;
+}
+
+.sidebarul a i{
+    margin-right: 10px;
+}
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+   position: absolute;
+   cursor: pointer;
+   background: #042331;
+   border-radius: 2px;
+}
+
+label #btn{
+    left: 35px;
+    top: 25px;
+    font-size: 15px;
+    padding: 5px 6px;
+    color: whitesmoke;
+    transition: all .5s;
+    position: fixed;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -185px;
+    top: 25px;
+    font-size: 15px;
+    color: #0a5275;
+    padding: 5px 6px;
+    transition: all .5s ease;
+    position: fixed;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left:42.2px;
+}
+
+main{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+
+article{
+    background-color: whitesmoke;
+    padding: 10x;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+article h2{
+    padding: 10px;
+    margin: 5px auto;
+}
+
+article h4,article h3{
+    padding: 10px;
+}
+
+article p{
+    padding: 10px;
+}
+
+#footer{
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px;
+}
+
+header{
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 6px;
+    color: whitesmoke;
+    background:blueviolet
+}
+
+
+
+
+
+

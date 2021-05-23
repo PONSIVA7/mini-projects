@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>jQuery Get Input Textbox Value</title>
+<link rel="stylesheet" type="text/css" href="CSS/chat.css"/>
+<script src='jquery.js'></script>
+
+</head>
+<body>
+  <div class="container">
+    <div id="topbar"></div>
+     <h1>chatbot</h1>
+     <input type="text" placeholder="Enter Your Text" class="txt-myinput" />
+     <button type="button" class="btn-gettxt">Get Input Content</button><br><br>
+     <div class="box">
+      <span class="finaltxt-content"></span>
+     </div>
+  </div>
+</body>
+<script>
+$(document).ready(function(){
+	$(".btn-gettxt").click(function(){
+		var mytxtcontent = $(".txt-myinput").val();
+		if(mytxtcontent=='HELLO'){
+			$(".finaltxt-content").html('Welcome');
+		}
+		if(mytxtcontent=='HI'){
+			$(".finaltxt-content").html('PODA');
+		}
+    if(mytxtcontent=='RIGHT TO EDUCATION ACT 2010' || mytxtcontent=='COMPALSARY EDUCATION'){
+      $(".finaltxt-content").html('THIS ACT MAYBE CALLED THE RIGHT OF CHILDREN TO FREE AND COMPALSARY EDUCATION ACT,2009.<br> IT SHALL EXTEND TO THE WHOLE OF INDIA EXCEPT THE STATE OF JAMMU AND KASHMIR. <br> IT SHALL COME INTO FORCE ON SUCH DATE AS HE CENTRAL GOVERNMENT MAY, BY NOTIFYCATION IN THE OFFICIAL GAZETTA,APPOINT.');	
+    }
+    if(mytxtcontent=='Only female officers can escort women to the police station' || mytxtcontent=='FEMALE ESCORTS'){
+			$(".finaltxt-content").html('Not only do male officers have no right to escort a woman but she can refuse to go to the police station between 6 pm to 6 am. <br>In case of a serious crime, a written permit from the magistrate is required for male officers to escort her.');
+		}
+    if(mytxtcontent=='. The tax recovery officer can arrest and release you' || mytxtcontent=='TRO RELEASE ACT'){
+			$(".finaltxt-content").html('In case of tax violations, the TRO has the right to arrest you, though a summon has to be sent.<br> The tax commissioner only decides how long can you be in custody, but your release will be decided by the TRO.');
+		}
+    if(mytxtcontent=='No traffic violation laws for non-motorised vehicles' || mytxtcontent=='TRAFFIC VIOLATION LAW'){
+			$(".finaltxt-content").html("Though it has been clarified that a golf cart is not allowed on the road but there aren't any penalties against non motor vehicles like a cycles or rickshaws, since they don't fall under the Motor Vehicles Act");
+		}
+    if(mytxtcontent==' Women can lodge complaints through emails' || mytxtcontent==' WOMEN E-MAIL COMPLAINTS'){
+			$(".finaltxt-content").html("Guidelines issued by the Delhi Police entitle women to the privilege of registering a complaint via email or even through post if she can't go to the police station.");
+		}
+    if(mytxtcontent=='Live-in relationships are not illegal' || mytxtcontent=='LIVE-IN RELATIONSHIP'){
+			$(".finaltxt-content").html("Though it is frowned upon in our country, but as long as both the adults are ready to stay together, live-in relationships are not illegal.<br>Moreover, live-in relationships are considered to be 'equal to marriage' if certain conditions are met few of which are pooling of financial and domestic arrangements, entrusting the responsibility, sexual relationship, bearing children, socialization in public and intention, conduct of the parties, etc. <br>This is done to protect women under the Domestic Violence Act .<br> Also, children born out of live-in relationships have the right to inherit their parent's property.");
+		}
+    if(mytxtcontent==' If you have been fined once in the day you maybe excused after that' || mytxtcontent=="VEHICLES FINES DON'T PAY AGAIN"){
+			$(".finaltxt-content").html('Riding around without a helmet can land you into trouble, but once you are fined for it, the chalaan slip can get you out of being fined for the same till midnight. <br>Yes, but this is not an encouragement to do so. Be safe while driving.');
+		}
+		if(mytxtcontent==" You don't have to pay the MRP, you can buy for less" || mytxtcontent=="DON'T PAY MRP"){
+			$(".finaltxt-content").html('MRP is the Maximum Retail Price.<br> As consumers, you have the right to bargain for a price below that.<br> However, a seller can not go beyond the MRP.');
+		}
+		if(mytxtcontent==" If you aren't paid, file a complaint immediately" || mytxtcontent=="AREN'T PAY CONTRACT MONEY"){
+      $(".finaltxt-content").html("The Limitation Act states that if you aren't paid by someone who is contracted to pay you, you need to file a complaint within 3 years. <br>After that time period your suit most likely will be dismissed, so being lazy about this is not an option.");
+    }
+    if(mytxtcontent==" 3 months in jail for PDA!" || mytxtcontent=="PUBLIC DISPLAY OF AFFECTION"){
+      $(".finaltxt-content").html("PDA within its limits is allowed but any obscene activity is punishable by law for upto 3 months. <br>Since the word obscene has not been defined, couples are often harassed by policemen.");
+    }
+    if(mytxtcontent=="Head constables have limited prosecution power" || mytxtcontent=="HEAD CONSTABLE LIMIT"){
+      $(".finaltxt-content").html("No head constable can fine you for any offence which presently has a penalty for more than Rs.100.<BR> But violation of more than one rule can result in a challan of higher value");
+    }
+    if(mytxtcontent==" A police officer is always on duty, literally" || mytxtcontent=="UN UNIFORM POLICE"){
+      $(".finaltxt-content").html("The 1861 Police Act clearly states that a police officers is always on duty.<BR> If he or she witnesses an act of crime or if an incident is brought to their knowledge they can't say 'I am not on duty' even if they aren't in uniform. <BR>Of course, they are entitled to some rest because of the the hard work that they put in to their work.");
+    }
+    if(mytxtcontent=="  Citizenship at the commencement of the Constitution" || mytxtcontent=="CITIZENSHIP"){
+      $(".finaltxt-content").html("who was born in the territory of India.<BR> Either of whose parents was born in the territory of India. Who has been ordinarily resident in the territory of India for not less than five years immediately preceding such commencement");
+    }
+    if(mytxtcontent=="Power of Parliament to modify the rights conferred by this Part in their application to Forces" || mytxtcontent=="POWER OF PARLIAMENT"){
+      $(".finaltxt-content").html("The members of the Armed Forces.<BR>The members of the Forces charged with the maintenance of public order <BR>Persons employed in any bureau or other organisation established by the State for purposes of intelligence or counter intelligence person employed  in connection with, the telecommunication systems set up for the purposes of any Force");
+    }
+    if(mytxtcontent=="Procedure in Parliament with respect to estimates" || mytxtcontent=="PROCEDURE OF PARLIAMENTS"){
+      $(".finaltxt-content").html(" So much of the estimates as relates to expenditure charged upon the Consolidated Fund of India shall not be submitted to the vote of Parliament,but nothing in this clause shall be construed as preventing the discussion in either House of Parliament of any of those estimates <BR> So much of the said estimates as relates to other expenditure shall be submitted in the form of demands for grants to the House of the People, and the House of the People shall have power to assent, or to refuse to assent, to any demand, or to assent to any demand subject to a reduction of the amount specified therein.");
+    }
+    if(mytxtcontent=="Language to be used in Parliament" || mytxtcontent=="PARLIAMENT LANGUAGE"){
+      $(".finaltxt-content").html("Provided that the Chairman of the Council of States or Speaker of the House of the People, or person acting as such, as the case may be, may permit any member who cannot adequately express himself in Hindi or in English to address the House in his mother-tongue.<BR>Unless Parliament by law otherwise provides, this article shall, after the expiration of a period of fifteen years from the commencement of this Constitution, have effect as if the words “or in English” were omitted therefrom");
+    }
+    if(mytxtcontent=="Rules of Court" || mytxtcontent=="RULES OF COURT"){
+      $(".finaltxt-content").html("(a) Rules as to the persons practising before the Court.<BR> (b) Rules as to the procedure for hearing appeals and other matters pertaining to appeals including the time within which appeals to the Court are to be entered.<BR> (c) Rules as to the proceedings in the Court for the enforcement of any of the rights conferred by Part III.Rules as to the proceedings in the Court under 5[article 139A].<BR>(d) Rules as to the entertainment of appeals under sub-clause (c) of clause (1) of article 134.<BR>(e) Rules as to the conditions subject to which any judgment pronounced or order made by the Court may be reviewed and the procedure for such review including the time within which applications to the Court for such review are to be entered.<BR>(f) Rules as to the costs of and incidental to any proceedings in the Court and as to the fees to be charged in respect of proceedings therein.<BR>(g) Rules as to the granting of bail.<BR>(h) Rules as to stay of proceedings.<BR>(i) Rules providing for the summary determination of any appeal which appears to the Court to be frivolous or vexatious or brought for the purpose of delay.<BR>(j) Rules as to the procedure for inquiries referred to in clause (1) of article 317.");
+    }
+    if(mytxtcontent=="Gram Sabha" || mytxtcontent=="GRAM SABHA"){
+      $(".finaltxt-content").html("A Gram Sabha may exercise such powers and perform such functions at the village level as the Legislature of a State may, by law, provide.");
+    }
+    if(mytxtcontent==". Goods and Services Tax Counci" || mytxtcontent=="GST"){
+      $(".finaltxt-content").html("(1) The President shall, within sixty days from the date of commencement of the Constitution (One Hundred and First Amendment) Act, 2016, by order, constitute a Council to be called the Goods and Services Tax Council.<BR> (2) The Goods and Services Tax Council shall consist of the following members, namely:—<BR>(a) the Union Finance Minister—Chairperson.<BR>(b) the Union Minister of State in charge of Revenue or Finance—Member.<BR>(c) the Minister in charge of Finance or Taxation or any other Minister nominated by each State Government—Members.<BR>(3) The Members of the Goods and Services Tax Council referred to in sub-clause (c) of clause  shall, as soon as may be, choose one amongst themselves to be the Vice-Chairperson of the Council for such period as they may decide.<BR>(4) The Goods and Services Tax Council shall make recommendations to the Union and the States on—<BR>(a) the taxes, cesses and surcharges levied by the Union, the States and the local bodies which may be subsumed in the goods and services tax;<BR>(b) the goods and services that may be subjected to, or exempted from the goods and services tax.<BR>(c) model Goods and Services Tax Laws, principles of levy, apportionment of Goods and Services Tax levied on supplies in the course of inter-State trade or commerce under article 269A and the principles that govern the place of supply.<BR>(d) the threshold limit of turnover below which goods and services may be exempted from goods and services tax.<BR>(e) the rates including floor rates with bands of goods and services tax .<BR>(f) any special rate or rates for a specified period, to raise additional resources during any natural calamity or disaster.<BR>(g) special provision with respect to the States of Arunachal Pradesh, Assam, Jammu and Kashmir, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, Tripura, Himachal Pradesh and Uttarakhand.<BR>(h) any other matter relating to the goods and services tax, as the Council may decide.<BR>(5) The Goods and Services Tax Council shall recommend the date on which the goods and services tax be levied on petroleum crude, high speed diesel, motor spirit (commonly known as petrol), natural gas and aviation turbine fuel.<BR>(6) While discharging the functions conferred by this article, the Goods and Services Tax Council shall be guided by the need for a harmonised structure of goods and services tax and for the development of a harmonised national market for goods and services.<BR>(7) One-half of the total number of Members of the Goods and Services Tax Council shall constitute the quorum at its meetings.<BR>(8) The Goods and Services Tax Council shall determine the procedure in the performance of its functions.<BR>(9) Every decision of the Goods and Services Tax Council shall be taken at a meeting, by a majority of not less than three-fourths of the weighted votes of the members present and voting, in accordance with the following principles, namely:—<BR>(a) the vote of the Central Government shall have a weightage of one-third of the total votes cast.<BR>(b) the votes of all the State Governments taken together shall have a weightage of two-thirds of the total votes cast, in that meeting.<BR>(10) No act or proceedings of the Goods and Services Tax Council shall be invalid merely by reason of— <BR>(a) any vacancy in, or any defect in, the constitution of the Council<BR>(b) any defect in the appointment of a person as a Member of the Council.<BR>(c) any procedural irregularity of the Council not affecting the merits of the case.<BR>(11) The Goods and Services Tax Council shall establish a mechanism to adjudicate any dispute—<BR>(a) between the Government of India and one or more StateS.<BR>(b) between the Government of India and any State or States on one side and one or more other States on the other side.<BR>(c) between two or more States, arising out of the recommendations of the Council.");
+    }
+    if(mytxtcontent=="420" || mytxtcontent=="CHEATING"){
+      $(".finaltxt-content").html("Section 420 of The Indian Penal Court talks about the offence which is committed by the person who cheats another person and thereby induces the deceived to deliver any property. This provision provides punishment for the same.<BR>According to the IPC, Section 420 states that whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security, or anything which is signed or sealed, and which is capable of being converted into a valuable security, shall be punished with imprisonment of either description for a term which may extend to seven years, and shall also be liable to fine.<BR> Under IPC, section 420 the offence is cognizable and non- bailable. ");
+    }
+    if(mytxtcontent=="RAPE" || mytxtcontent=="376"){
+      $(".finaltxt-content").html("(1) Whoever, except in the cases provided for by sub-section (2), commits rape shall be punished with imprisonment of either description for a term which shall not be less than seven years but which may be for life or for a term which may extend to ten years and shall also be liable to fine unless the women raped is his own wife and is not under twelve years of age, in which cases, he shall be punished with imprisonment of either description for a term which may extend to two years or with fine or with both: Provided that the court may, for adequate and special reasons to be mentioned in the judgment, impose a sentence of imprisonment for a term of less than seven years.<BR>(2) Whoever,—<BR>(a) being a police officer commits rape—<BR>(i) within the limits of the police station to which he is ap­pointed.<BR>(ii) in the premises of any station house whether or not situated in the police station to which he is appointed.<BR>(iii) on a woman in his custody or in the custody of a police officer subordinate to him.<BR>(b) being a public servant, takes advantage of his official position and commits rape on a woman in his custody as such public servant or in the custody of a public servant subordinate to him.<BR>(c) being on the management or on the staff of a jail, remand home or other place of custody established by or under any law for the time being in force or of a woman’s or children’s insti­tution takes advantage of his official position and commits rape on any inmate of such jail, remand home, place or institution.<BR>(d) being on the management or on the staff of a hospital, takes advantage of his official position and commits rape on a woman in that hospital.<BR>(e) commits rape on a woman knowing her to be pregnant.<BR>(f) commits rape on a woman when she is under twelve years of age.<BR>(g) commits gang rape, shall be punished with rigorous imprisonment for a term which shall not be less than ten years but which may be for life and shall also be liable to fine: Provided that the Court may, for adequate and special reasons to be mentioned in the judgment, impose a sentence of imprisonment of either description for a term of less than ten years. Explanation 1.—Where a woman is raped by one or more in a group of persons acting in furtherance of their common intention, each of the persons shall be deemed to have committed gang rape within the meaning of this sub-section. Explanation 2.—“Women’s or children’s institution” means an institution, whether called an orphanage or a home for neglected woman or children or a widows’ home or by any other name, which is established and maintained for the reception and care of woman or children. Explanation 3.—“Hospital” means the precincts of the hospital and includes the precincts of any institution for the reception and treatment of persons during convalescence or of persons requiring medical attention or rehabilitation.");
+    }
+    if(mytxtcontent=="PODA" || mytxtcontent=="poda"){
+      $(".finaltxt-content").html("poda sunni");
+    }
+	});
+});
+</script>
+</html> 

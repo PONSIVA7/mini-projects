@@ -1,0 +1,59 @@
+*{
+    margin: 0 auto;
+}
+
+.container{
+    width: 900px;
+    height: 100%;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: fantasy;
+    color: rgb(100, 12, 182);
+    background-color: rgb(240, 213, 178);
+}
+
+.txt-myinput{
+  margin-top: 15px;
+  text-align: center;
+  width: 894px;
+  height: 30px;
+  overflow: hidden;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: black;
+}
+
+.btn-gettxt{
+  text-align: center;
+  width: 902px;
+  height: 30px;
+  color: aqua;
+}
+
+.box{
+    border: black 2px solid;
+    width: px;
+    height: 387px;
+    background: rgb(255, 244, 228);
+    padding: 10px;
+    color: rgb(43, 12, 182);
+    text-align: center;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+}
+.box label{
+    width: 80px;
+    height: 20px;
+    color: rgb(43, 12, 182);
+    text-align: center;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bold;
+}

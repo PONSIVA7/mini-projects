@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+}
+
+.topbar{
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: fantasy;
+    color: rgb(119, 22, 209);
+    background-color: rgb(240, 213, 178);
+    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.talk{
+    text-align: center;
+}
+
+.talk a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.talk a img{
+    width: 100%;
+    max-height: 315px;
+    margin-top: 240px;
+    overflow: hidden;
+    opacity: 5px;
+}
+
+span{
+    width: 100%;
+    max-height: 400px;
+}
+
+.voice2text{
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 2px;
+    font-size: 30px;
+    color: rgb(20, 3, 3);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

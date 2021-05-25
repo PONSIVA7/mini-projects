@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>image hover</title>
+    <style>
+      .example {
+        cursor: pointer;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        width: 400px;
+        text-align: center;
+      }
+      .example .fadedbox {
+        background-color: #666666;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+        opacity: 0;
+        width: 360px;
+        height: 100px;
+        padding: 130px 20px;
+      }
+      .example:hover .fadedbox {
+        opacity: 0.8;
+      }
+      .example .text {
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+      }
+      .example .title {
+        font-size: 1em;
+        text-transform: uppercase;
+        opacity: 0;
+        transition-delay: 0.2s;
+        transition-duration: 0.3s;
+      }
+      .example:hover .title,
+      .example:focus .title {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="example">
+      <img src="img/img1.jpg" width="400" height="300" alt="house" />
+      <div class="fadedbox">
+        <div class="title text">
+            <p>padinga da pesama. elai pongal over ah kindatha la</p>
+            <p> adichi thukku adichi thukku adichii thukku</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
